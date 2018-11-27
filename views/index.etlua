@@ -1,0 +1,9 @@
+<h2>Index</h2>
+<ul>
+  <li>
+    <a href="<%- url_for('foo_index') %>">Foo</a>
+  </li>
+  <li>
+    <a href="<%- url_for('bar_index') %>">Bar</a>
+  </li>
+</ul>

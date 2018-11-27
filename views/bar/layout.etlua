@@ -1,0 +1,26 @@
+<%
+  local page_title_prefix = 'Bar - '
+  if not page_title then
+    page_title_prefix = 'Bar'
+    page_title = ''
+  end
+-%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link id="css" rel="stylesheet" href="/static/css/bar.css">
+    <title>
+      <%= page_title_prefix..page_title %>
+    </title>
+  </head>
+<body>
+<h1>Bar Header</h1>
+<hr>
+<% content_for("inner") %>
+<hr>
+<div>
+  <small>footer text</small>
+</div>
+</body>
+</html>
